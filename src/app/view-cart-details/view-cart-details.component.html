@@ -1,0 +1,40 @@
+
+<div class="container">
+    <div class="row row-cols-4">
+      <div class="col"><b>PRODUCT</b></div>
+      <div class="col" style="text-align: center;"><b>PRICE</b></div>
+      <div class="col"><b>QUANTITY</b></div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="card mb-3" style="max-width: 700px">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img [src]="productData.image" height="250px" width="150px">
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="card-title">{{productData.category}}</h5>
+                        </div>
+                        <div class="col-2">
+                            <p class="card-text"><small class="text-muted">{{productData.price}}</small></p>
+                        </div>
+                        <div class="col-4">
+                            <input type="button" (click)="decrementValue()" value="-" />
+                            <input style="text-align: center" type="text" name="quantity" value="1" maxlength="2" max="10" size="1" [(ngModel)] = "addToCartValue" />
+                            <input type="button" (click)="incrementValue()" value="+" />
+                        </div>                        
+                    </div>
+                    <div class="row checkout">
+                        <div class="col-10">
+                        <button type="button" class="btn btn-primary" (click)="onCheckout()">Checkout</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

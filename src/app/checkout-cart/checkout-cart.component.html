@@ -1,0 +1,38 @@
+<form class="container">
+  <div class="row mb-3">
+    <label  class="col-sm-2 col-form-label">Delivery Address</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="address">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label  class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="name">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label  class="col-sm-2 col-form-label">Contact No.</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="contactNo">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Delivery Option</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" value="Standard Delivery" checked>
+        <label class="form-check-label">
+          Standard Delivery
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios"  value="Fast Delivery">
+        <label class="form-check-label">
+          Fast Delivery
+        </label>
+      </div>      
+    </div>
+  </fieldset>
+  <button type="button" class="btn btn-primary" (click)="onPlaceOrder()">Place Order</button>
+</form>

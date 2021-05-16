@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row header">
+        <div class="col-10 home">
+            <img alt="SimplCommerce" src="/assets/shop.jpg" width="100px" height="50px">
+        </div>
+        <div class="col-2">
+            <a [routerLink]="['/viewcart']">
+                <img src="/assets/cart.jpg" width='40px' height="40px"
+                    style="padding-top: 6px; margin-left: 81px; margin-bottom: -54px;">
+            </a>
+            <span class="cartvalue">{{cartValue}}</span>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

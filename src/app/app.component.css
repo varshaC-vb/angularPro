@@ -1,0 +1,23 @@
+.header{
+    margin-bottom: 30px;
+    background-color: midnightblue;
+    margin-top: 15px;
+}
+.home{
+    font-size: 35px;
+}
+.cartvalue{
+    height: 25px;
+  width: 25px;
+  background-color:red;
+  border-radius: 50%;
+  display: inline-block;
+  top: 31px;
+  position: absolute;
+  padding-left: 8px;
+  margin-left: -10px;
+  color: white;
+}
+.home{
+    padding: 16px;
+}

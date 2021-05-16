@@ -9,6 +9,7 @@ export class CheckoutCartComponent implements OnInit {
   address;
   name;
   contactNo;
+  route: any;
 
   constructor() { }
 
@@ -18,7 +19,7 @@ export class CheckoutCartComponent implements OnInit {
     // this.address = '';
     // this.name = '';
     // this.contactNo = '';
-    alert('thank you for using this website')
+    this.route.navigateByUrl('/thankyou')
   }
 
 }

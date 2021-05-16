@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ViewCartDetailsComponent } from './view-cart-details/view-cart-details.component';
 import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 @NgModule({
    declarations: [
@@ -15,7 +16,8 @@ import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
       HomeComponent,
       ProductDetailsComponent,
       ViewCartDetailsComponent,
-      CheckoutCartComponent
+      CheckoutCartComponent,
+      ThankYouComponent
    ],
    imports: [
 	 BrowserModule,

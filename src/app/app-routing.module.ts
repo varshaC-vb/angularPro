@@ -5,12 +5,14 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HomeComponent } from './home/home.component';
 import { ViewCartDetailsComponent } from './view-cart-details/view-cart-details.component';
 import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 const routes: Routes = [
   { path: '', redirectTo: '/product', pathMatch: 'full' },
   { path: 'product',pathMatch: 'full',  component: HomeComponent },
   { path: 'product/:productId', component: ProductDetailsComponent },
   { path: 'viewcart', component: ViewCartDetailsComponent },
   { path: 'checkout', component: CheckoutCartComponent }
+  {path: 'thankyou',component:ThankYouComponent}
 ]
 
 @NgModule({
